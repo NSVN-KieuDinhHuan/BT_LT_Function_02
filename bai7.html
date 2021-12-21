@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 7</title>
+</head>
+<body>
+<script>
+   // Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.
+   let Interger_1=prompt("nhập số nguyên thứ 1")
+   let Interger_2=prompt("nhập số nguyên thứ 2")
+   function changeInterger(inter1,inter2) {
+       let temp=inter2;
+       inter2=inter1;
+       inter1=temp;
+       document.write("số thứ 1 là:"+inter1+", số thứ 2 là:"+inter2)
+   }
+   changeInterger(Interger_1,Interger_2)
+
+</script>
+
+</body>
+</html>

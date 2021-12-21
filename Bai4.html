@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. Nếu là ký tự số hàm trả về true, ngược lại trả về false.
+    function isNumber(n) {
+        return !isNaN(parseFloat(n)) && !isNaN(n - 0)
+    }
+    let num4=prompt("Bài 4: nhập vào một chuỗi")
+    if (isNumber(num4)==true) {
+        document.write("Bài 4: phần tử là một số");
+    }else {
+        document.write("Bài 4: phần tử là một chuỗi");
+    }
+</script>
+</body>
+</html>

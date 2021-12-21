@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+    function tough(number_3) {
+        let result=1;
+        while(number_3>0) {
+            result=result*number_3
+            number_3=number_3-1
+        }
+        return result;
+    }
+    num3=prompt("Bài 3: nhập số để tính dai thừa")
+    document.write("Bài 3:Giai thừa của "+num3+" là "+tough(num3))
+</script>
+</body>
+</html>

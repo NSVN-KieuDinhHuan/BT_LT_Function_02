@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai9</title>
+</head>
+<body>
+<script>
+    function checkArray(arr,char) {
+        let count = 0
+        for (let i = 0; i < arr.length; i++) {
+            if (char == arr[i]) {
+                count += 1
+            }
+        }
+        if (count>0) {
+            document.write("số lần xuất hiện ky tự '" +char+ " ' trong mảng là "+count)
+        }else {
+           return "-1"
+        }
+
+
+    }
+    let arr1=["apple","orange","banana","coconus","banana","banana"]
+    checkArray(arr1,"banan")
+</script>
+</body>
+</html>
